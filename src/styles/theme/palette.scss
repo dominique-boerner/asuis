@@ -1,0 +1,33 @@
+@use "sass:map";
+
+/** We can use https://maketintsandshades.com to generate different shades of a color **/
+
+// primary color palette
+$primary-color: (
+  "100": #d3eafd,
+  "200": #a6d5fa,
+  "300": #7ac0f8,
+  "400": #4dabf5,
+  "500": #2196f3,
+  "normal": #2196f3,
+  "600": #1e88e5,
+  "700": #1a78c2,
+  "800": #145a92,
+  "900": #0d3c61,
+);
+
+// secondary color palette
+$secondary-color: (
+  "100": #ffffff,
+  "200": #ffe7cc,
+  "300": #ffcf99,
+  "400": #ffb866,
+  "500": #ffa033,
+  "normal": #ff8800,
+  "600": #cc6d00,
+  "700": #995200,
+  "800": #663600,
+  "900": #331b00,
+);
+
+@debug map.get($primary-color, "normal");
