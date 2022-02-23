@@ -1,9 +1,11 @@
 @use "sass:map";
 
-/** Generated font-sizes via https://type-scale.com */
+@import "fonts";
 
-$base-font-size: 20px;
+/// basic font size, which scales up the whole application
+$base-font-size: 18px;
 
+/// Generated font-sizes via https://type-scale.com.
 $font-size: (
   "xl": 1.563rem,
   "lg": 1.25rem,
@@ -12,11 +14,13 @@ $font-size: (
   "xs": 0.64rem,
 );
 
+/// register new font families here and use it via "get-font-family" mixin
 $font-family: (
   "global": "Arial",
-  "logo": "Arial",
+  "logo": "Times new Roman",
 );
 
+/// Line heights based on best practices
 $line-height: (
   "sm": 1.4,
   "md": 1.5,

@@ -1,1 +1,18 @@
 @import "./styles/theme/theme";
+
+body {
+  padding: 4rem;
+}
+
+.shade-box {
+  width: 200px;
+  height: 200px;
+  box-shadow: 1px 1px 4px rgba(#333, 0.2);
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  column-gap: unset;
+}

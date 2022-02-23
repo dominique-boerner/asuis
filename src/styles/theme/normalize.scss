@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: get-font-size("xl");
+}
+
+h2 {
+  font-size: get-font-size("lg");
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: get-font-size("md");
+}
