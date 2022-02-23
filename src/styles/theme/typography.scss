@@ -14,12 +14,6 @@ $font-size: (
   "xs": 0.64rem,
 );
 
-/// register new font families here and use it via "get-font-family" mixin
-$font-family: (
-  "global": "Arial",
-  "logo": "Times new Roman",
-);
-
 /// Line heights based on best practices
 $line-height: (
   "sm": 1.4,
