@@ -29,5 +29,3 @@ $secondary-color: (
   "800": #663600,
   "900": #331b00,
 );
-
-@debug map.get($primary-color, "normal");
