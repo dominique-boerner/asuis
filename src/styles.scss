@@ -16,3 +16,17 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   column-gap: unset;
 }
+
+.grid-spacing {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: unset;
+
+  .box {
+    width: 100px;
+    height: 200px;
+    box-shadow: 1px 1px 4px rgba(#333, 0.2);
+    border-radius: 10px;
+    background: white;
+  }
+}
