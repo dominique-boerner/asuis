@@ -1,5 +1,36 @@
 @use "sass:map";
 
+/// Get the primary color based on specific shade
+/// @param {String} $shade - the shade for the color, ranges from "100" to "900"
+/// @type String
 @function get-primary-color($shade: "500") {
   @return map.get($primary-color, $shade);
+}
+
+/// Get the secondary color based on specific shade
+/// @param {String} $shade - the shade for the color, ranges from "100" to "900"
+/// @type String
+@function get-secondary-color($shade: "500") {
+  @return map.get($secondary-color, $shade);
+}
+
+/// Get the font size based on the given size
+/// @param {String} $size - can be "xs", "sm", "md", "lg" or "xl"
+/// @type Number
+@function get-font-size($size: "md") {
+  @return map.get($font-size, $size);
+}
+
+/// Get the font family based on a given key
+/// @param {String} $family - can be "global" or "logo"
+/// @type FontFamily
+@function get-font-family($family: "global") {
+  @return map.get($font-family, $family);
+}
+
+/// Get the line height based on a given key
+/// @param {String} $family - can be "sm", "md" or "lg"
+/// @type Number
+@function get-line-height($height: "md") {
+  @return map.get($line-height, $height);
 }

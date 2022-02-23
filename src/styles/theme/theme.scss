@@ -1,3 +1,14 @@
 @import "palette";
 @import "typography";
 @import "mixins";
+@import "utility";
+
+* {
+  font-size: #{$base-font-size};
+  font-family: get-font-family("global"), serif;
+  line-height: get-line-height("md");
+}
+
+body {
+  background: get-primary-color("100");
+}
