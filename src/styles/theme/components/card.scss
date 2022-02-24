@@ -8,6 +8,7 @@ $card-spacing: get-spacing("2x");
   box-shadow: get-shadow();
   border-radius: 4px;
   overflow: hidden;
+  background: white;
 
   &.card--md {
     box-shadow: get-shadow();
@@ -28,5 +29,15 @@ $card-spacing: get-spacing("2x");
   .card-article {
     font-size: get-font-size("md");
     padding: $card-spacing;
+  }
+
+  .card-actions {
+    display: flex;
+    flex-direction: row;
+    padding: $card-spacing;
+
+    .card-action:not(:first-child) {
+      margin: 0 $card-spacing;
+    }
   }
 }
