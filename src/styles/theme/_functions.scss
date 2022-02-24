@@ -41,3 +41,10 @@
 @function get-spacing($space: "1x") {
   @return map.get($spacing, $space);
 }
+
+/// Get the shadow based on a given key
+/// @param {String} $shadow
+/// @type BoxShadow
+@function get-shadow($box-shadow: "md") {
+  @return map.get($shadow, $box-shadow);
+}
