@@ -5,30 +5,44 @@
 
 /// primary color palette
 $primary-color: (
-  "100": #d3eafd,
-  "200": #a6d5fa,
-  "300": #7ac0f8,
-  "400": #4dabf5,
-  "500": #2196f3,
-  "normal": #2196f3,
-  "600": #1e88e5,
-  "700": #1a78c2,
-  "800": #145a92,
-  "900": #0d3c61,
+  "100": #fabacf,
+  "200": #f78daf,
+  "300": #f45e8f,
+  "400": #f13877,
+  "500": #ee025f,
+  "normal": #ee025f,
+  "600": #dd005c,
+  "700": #c70058,
+  "800": #b20054,
+  "900": #8e004e,
 );
 
 /// secondary color palette
 $secondary-color: (
-  "100": #ffe7cc,
-  "200": #ffcf99,
-  "300": #ffb866,
-  "400": #ffa033,
-  "500": #ff8800,
-  "normal": #ff8800,
-  "600": #cc6d00,
-  "700": #995200,
-  "800": #663600,
-  "900": #331b00,
+  "100": #b7f8d0,
+  "200": #7ff3b2,
+  "300": #02ee90,
+  "400": #00e773,
+  "500": #00df5d,
+  "normal": #00df5d,
+  "600": #00ce51,
+  "700": #00ba44,
+  "800": #00a738,
+  "900": #008622,
 );
 
-// TODO: surface colors
+/// background color of surfaces
+$surface-color: (
+  "body": #f6f7fb,
+  "card": #ffffff,
+);
+
+$severity: (
+  "success": #22c55e,
+  "info": #3b82f6,
+  "warning": #f59e0b,
+  "danger": #b00020,
+);
+
+/// custom colors
+$custom-color: ();

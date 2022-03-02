@@ -1,0 +1,22 @@
+@import "./src/styles/theme/theme";
+
+.p-button {
+  background: get-primary-color();
+  border-radius: get-border-radius();
+  border: none;
+  box-shadow: get-shadow("sm");
+  color: lighten(get-primary-color(), 100);
+  padding: get-spacing("2x") get-spacing("4x");
+  cursor: pointer;
+  transition: 200ms ease-in-out; // TODO: variable
+
+  &:hover,
+  &:focus {
+    background: darken(get-primary-color(), 10);
+  }
+
+  &:active {
+    background: darken(get-primary-color(), 20);
+    box-shadow: none;
+  }
+}

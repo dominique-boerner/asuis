@@ -1,0 +1,35 @@
+@import "./src/styles/theme/theme";
+
+.p-tag {
+  background: get-primary-color();
+  color: lighten(get-primary-color(), 100);
+  font-size: get-font-size();
+  font-weight: 700;
+  padding: get-spacing("1x") get-spacing("2x");
+  border-radius: get-border-radius();
+
+  &.p-tag-success {
+    background-color: get-severity-color("success");
+    color: lighten(get-severity-color("success"), 100);
+  }
+
+  &.p-tag-info {
+    background-color: get-severity-color("info");
+    color: lighten(get-severity-color("info"), 100);
+  }
+
+  &.p-tag-warning {
+    background-color: get-severity-color("warning");
+    color: lighten(get-severity-color("warning"), 100);
+  }
+
+  &.p-tag-danger {
+    background-color: get-severity-color("danger");
+    color: lighten(get-severity-color("danger"), 100);
+  }
+
+  .p-tag-icon {
+    margin-right: 0.25rem;
+    font-size: 0.75rem;
+  }
+}

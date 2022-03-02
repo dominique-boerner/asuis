@@ -5,8 +5,8 @@
 @import "fonts";
 @import "shadow";
 @import "utility";
+@import "border-radius";
 @import "normalize";
-@import "component";
 
 * {
   font-size: #{$base-font-size};
@@ -15,5 +15,5 @@
 }
 
 body {
-  background: get-primary-color("100");
+  background: get-surface-color("body");
 }

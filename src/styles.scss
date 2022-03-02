@@ -1,4 +1,5 @@
 @import "./styles/theme/theme";
+@import "./styles/primeng/theme";
 
 body {
   padding: 4rem;
@@ -36,17 +37,4 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
-}
-
-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border: none;
-  background: get-primary-color();
-  color: white;
-  border-radius: 4px;
-  padding: get-spacing("1x") get-spacing("4x");
-  cursor: pointer;
 }
