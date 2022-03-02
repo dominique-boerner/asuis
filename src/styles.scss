@@ -2,7 +2,35 @@
 @import "./styles/primeng/theme";
 
 body {
-  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  //padding: 4rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: get-primary-color("900");
+  height: 400px;
+
+  .title {
+    font-size: get-font-size("6xl");
+    color: white;
+  }
+
+  .subtitle {
+    color: white;
+    font-size: get-font-size("md");
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: get-spacing("4x") auto;
+  max-width: 1400px;
 }
 
 .shade-box {
